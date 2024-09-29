@@ -1,0 +1,74 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.header-container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 .65rem;
+    border: 1px solid rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+}
+
+.header-logo {
+    font-size: 1.1rem;
+    padding: 0 .6rem;
+    font-weight: 800;
+}
+
+.header-navbar {
+    padding: 0 10px;
+}
+
+.header-navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    list-style: none;
+    font-weight: 550;
+}
+
+.header-navbar-list-item {}
+
+.header-button {
+    /* font-size: .9rem; */
+    font-style: inherit;
+    font-weight: 550;
+    background: transparent;
+    border: none;
+    padding: .55rem .75rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: box-shadow 100ms ease;
+}
+
+.header-button:hover {
+    background: rgb(250, 250, 250);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header-button.cool {
+
+    margin-left: .4rem;
+    padding: .60rem .65rem;
+    color: white;
+    background: hsla(202, 71%, 27%, 1);
+
+    background: linear-gradient(0deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+
+    background: -moz-linear-gradient(0deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+
+    background: -webkit-linear-gradient(0deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#145277", endColorstr="#83D0CB", GradientType=1);
+}
+
+.header-button.cool:hover{
+
+}
