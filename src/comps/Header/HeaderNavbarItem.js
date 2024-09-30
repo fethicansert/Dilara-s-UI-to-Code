@@ -1,14 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { IoIosArrowDown } from "react-icons/io";
 import { SlArrowDown } from "react-icons/sl";
+import NavDropbox from './NavDropbox';
 
 
-const HeaderNavbarItem = ({ text, isArrowed }) => {
+const HeaderNavbarItem = ({ text, isArrowed, children }) => {
+
+    const [showDropbox, setShowDropbox] = useState(false);
+
     return (
-        <li className='header-navbar-list-item'>
+        <li
+            onClick={() => { setShowDropbox(prev => !prev) }}
+            className='header-navbar-list-item'>
             {text}
-            {isArrowed && <IoIosArrowDown className='header-navbar-item-icon' size={20} />}
+
+            {isArrowed &&
+                <span className='header-navbar-item-icon-wrapper'>
+                    <IoIosArrowDown className='header-navbar-item-icon' size={17.5} />
+                </span>
+            }
+
+            {
+                isArrowed && showDropbox
+                && <NavDropbox>{children}</NavDropbox>
+            }
+
         </li>
     )
 }

@@ -1,6 +1,6 @@
-const HeaderContainer = ({children}) => {
+const HeaderContainer = ({ children, flexDirection = 'row' }) => {
     return (
-        <div className="header-container">
+        <div className="header-container" style={{ flexDirection: flexDirection }}>
             {children}
         </div>
     );

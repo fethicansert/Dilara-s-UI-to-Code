@@ -1,9 +1,11 @@
-const HeaderButtons = ({children}) => {
+import Button from "../Buttons/Button";
+
+const HeaderButtons = ({ children }) => {
     return (
-         <>
-            <button className="header-button">Log in</button>
-            <button className="header-button cool">Sign up</button>
-         </>
+        <>
+            <Button>Log in</Button>
+            <Button isCool={true}>Sign up</Button>
+        </>
     );
 }
 

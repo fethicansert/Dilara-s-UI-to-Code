@@ -1,0 +1,42 @@
+.hero-section {
+    height: calc(100vh - 66px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background: red; */
+
+    position: relative;
+}
+
+.hero-title {
+    font-size: 2.5em;
+    line-height: 65px;
+    font-weight: 650;
+
+}
+
+.hero-text {
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.gradient-text {
+    background: hsla(202, 71%, 27%, 1);
+
+    background: linear-gradient(0deg, hsla(202, 71%, 27%, 1) 0%, hsla(176, 45%, 66%, 1) 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-path {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FBFBFF;
+    clip-path: ellipse(74% 20% at 51% 99%);
+}
