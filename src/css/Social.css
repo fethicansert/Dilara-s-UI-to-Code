@@ -5,6 +5,42 @@
 
 .social-title {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2em;
     font-weight: 650;
+}
+
+.logo {
+    margin: 0 2.2rem;
+}
+
+.logos-container {
+    max-width: 1200px;
+    margin: 2rem auto 2rem auto;
+    overflow: hidden;
+}
+
+.logos-wrapper {
+    /* position: absolute; */
+    display: flex;
+    /* background: red; */
+    position: relative;
+    right: 0%;
+    animation-name: slideleft;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slideleft {
+    0% {
+        right: 0%
+    }
+
+    50% {
+        right: 50%;
+    }
+
+    100% {
+        right: 0%;
+    }
 }
