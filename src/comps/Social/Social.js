@@ -14,12 +14,14 @@ import buzfeedLogo from '../../images/buzzfeed.png'
 import Logo from './Logo';
 
 import '../../css/Social.css'
+import Wrapper from '../Wrapper';
 
 const Social = () => {
     return (
         <section className='social-section'>
 
-            <div className='wrapper'>
+            <Wrapper>
+
                 <h2 className='social-title'>Our Clients & Partners</h2>
 
                 <div className='logos-container'>
@@ -38,7 +40,7 @@ const Social = () => {
                     </div>
                 </div>
 
-            </div>
+            </Wrapper>
 
         </section>
     )

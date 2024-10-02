@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import '../../css/Services.css';
 import ServiceBox from './ServiceBox';
+import Wrapper from '../Wrapper';
 
 import { PiBugBeetleFill } from "react-icons/pi";
 import { PiLockKeyFill } from "react-icons/pi";
@@ -40,7 +41,7 @@ const Services = () => {
 
     return (
         <section className='services-section' id='service-section'>
-            <div className='wrapper'>
+            <Wrapper>
                 <h2 className='services-title'>Our Services</h2>
 
                 <p className='services-text'>
@@ -85,7 +86,7 @@ const Services = () => {
                     See All Services
                 </Button>
 
-            </div>
+            </Wrapper>
 
         </section>
     )

@@ -20,8 +20,7 @@ code {
 }
 
 .wrapper {
-  /* border: 1px solid lightgreen; */
+  border: 1px solid lightgreen;
   width: 1200px;
   margin: 0 auto;
-  text-align: center;
 }

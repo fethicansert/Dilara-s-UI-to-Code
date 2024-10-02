@@ -5,9 +5,9 @@ import { SlArrowDown } from "react-icons/sl";
 import NavDropbox from './NavDropbox';
 
 
-const HeaderNavbarItem = ({ text, isArrowed, children }) => {
+const HeaderNavbarItem = ({ text, isArrowed, children, showDropbox, setShowDropbox }) => {
 
-    const [showDropbox, setShowDropbox] = useState(false);
+
 
     return (
         <li
