@@ -24,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: relative;
 }
 
 
@@ -42,6 +43,7 @@
     flex-direction: column;
     justify-content: space-evenly;
 
+    text-align: start;
     cursor: pointer;
 
     transition: transform 250ms ease;
@@ -50,7 +52,7 @@
 
 .service-box:hover {
     position: relative;
-    transform: translateY(-8%);
+    transform: translateY(-5%);
 }
 
 .service-box:hover .service-box-icon-wrapper {
@@ -58,7 +60,6 @@
 }
 
 .service-box-title {
-
     font-size: 1rem;
     font-weight: 520;
 }
@@ -76,4 +77,57 @@
 
     border-radius: 7px;
     width: min-content;
+}
+
+.service-box-container:hover .blue-marks {
+    opacity: 1;
+}
+
+.blue-marks {
+    position: absolute;
+    bottom: 100%;
+    right: 99%;
+    rotate: -10deg;
+
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+
+.blue-marks.left {
+    top: 100%;
+    left: 99%;
+    rotate: 170deg;
+}
+
+.blue-marks:hover {
+    background: teal;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+
+
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../css/Services.css';
 import ServiceBox from './ServiceBox';
 
@@ -6,11 +6,40 @@ import { PiBugBeetleFill } from "react-icons/pi";
 import { PiLockKeyFill } from "react-icons/pi";
 import { PiUsersThreeFill } from "react-icons/pi";
 import { AiFillOpenAI } from "react-icons/ai";
+import blueMarks from '../../images/file.png'
+
 import Button from '../Buttons/Button';
 
 const Services = () => {
+
+    useEffect(() => {
+
+        const section = document.getElementById('service-section');
+        const blueMarks = document.querySelectorAll('.blue-marks')
+
+
+        const options = {
+            rootMargin: '0px',
+            threshold: .7
+        };
+
+        const observer = new IntersectionObserver(animated, options);
+        observer.observe(section);
+
+        function animated(e) {
+
+            if (e[0].isIntersecting) {
+                blueMarks.forEach(marks => {
+                    marks.style.animation = 'fading 2.5s ease'
+                });
+            }
+
+        };
+
+    });
+
     return (
-        <section className='services-section'>
+        <section className='services-section' id='service-section'>
             <div className='wrapper'>
                 <h2 className='services-title'>Our Services</h2>
 
@@ -20,6 +49,8 @@ const Services = () => {
                 </p>
 
                 <div className='service-box-container'>
+
+                    <img src={blueMarks} className='blue-marks' width={70} />
 
                     <ServiceBox
                         icon={<PiBugBeetleFill size={19} />}
@@ -45,6 +76,8 @@ const Services = () => {
                         title={"Cyber Threat Intelligence"}
                         description={"Stah ahead of threat with our proactive intelligence solutions."}
                     />
+
+                    <img src={blueMarks} className='blue-marks left' width={70} />
 
                 </div>
 
