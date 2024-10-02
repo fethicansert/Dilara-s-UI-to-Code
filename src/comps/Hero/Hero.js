@@ -19,7 +19,7 @@ const Hero = () => {
 
             <Button isCool={true} isLong={true}>
                 Get Started
-                <HiOutlineArrowRight className='cool-button-icon' size={20} />
+                <HiOutlineArrowRight className='cool-button-icon' size={16} />
             </Button>
 
             <div className='clip-path'></div>

@@ -116,8 +116,8 @@ header {
 
 
 .header-button.long {
-    padding: .52rem 4rem;
-    margin-bottom: 1rem;
+    padding: .62rem 4rem;
+    margin: 0 auto 1rem auto
 }
 
 .header-button.cool:hover {

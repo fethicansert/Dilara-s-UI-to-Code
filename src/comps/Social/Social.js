@@ -19,22 +19,25 @@ const Social = () => {
     return (
         <section className='social-section'>
 
-            <h2 className='social-title'>Our Clients & Partners</h2>
+            <div className='wrapper'>
+                <h2 className='social-title'>Our Clients & Partners</h2>
 
-            <div className='logos-container'>
-                <div className='logos-wrapper'>
-                    <Logo logoImage={googleLogo} />
-                    <Logo logoImage={cadburyLogo} />
-                    <Logo logoImage={godaddyLogo} />
-                    <Logo logoImage={lenovoLogo} />
-                    <Logo logoImage={polygonLogo} />
-                    <Logo logoImage={spotifyLogo} />
-                    <Logo logoImage={yahooLogo} />
-                    <Logo logoImage={ciscoLogo} />
-                    <Logo logoImage={caremLogo} />
-                    <Logo logoImage={netflixLogo} />
-                    <Logo logoImage={buzfeedLogo} />
+                <div className='logos-container'>
+                    <div className='logos-wrapper'>
+                        <Logo logoImage={googleLogo} />
+                        <Logo logoImage={cadburyLogo} />
+                        <Logo logoImage={godaddyLogo} />
+                        <Logo logoImage={lenovoLogo} />
+                        <Logo logoImage={polygonLogo} />
+                        <Logo logoImage={spotifyLogo} />
+                        <Logo logoImage={yahooLogo} />
+                        <Logo logoImage={ciscoLogo} />
+                        <Logo logoImage={caremLogo} />
+                        <Logo logoImage={netflixLogo} />
+                        <Logo logoImage={buzfeedLogo} />
+                    </div>
                 </div>
+
             </div>
 
         </section>
