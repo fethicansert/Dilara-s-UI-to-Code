@@ -17,7 +17,7 @@
     border-radius: 7px;
 
     min-width: calc((1200px / 3.3) - (3 * 5px));
-    min-height: calc((1200px / 3.3) - (3 * 10px));
+    min-height: calc((1200px / 3.3) - (3 * 15px));
 
 
     padding: 2rem 1rem;
