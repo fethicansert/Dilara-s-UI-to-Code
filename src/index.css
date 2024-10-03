@@ -35,9 +35,4 @@ code {
   display: flex;
   gap: 0 15px;
   position: relative;
-  right: 0%;
-  animation-name: slideleft;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }

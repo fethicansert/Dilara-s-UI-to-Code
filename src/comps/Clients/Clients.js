@@ -22,7 +22,7 @@ const Clients = () => {
     };
 
     const animation1 = 'clientsAnimationRight 12s infinite linear';
-    const animation2 = 'clientsAnimationRight 12s 6s infinite linear';
+    const animation2 = 'clientsAnimationLeft 12s infinite linear';
 
     return (
         <section className='clients-section'>
@@ -33,7 +33,7 @@ const Clients = () => {
 
                     <div className='clients-container'>
 
-                        <Slider animation={animation1}>
+                        <Slider animation={animation1} startPoint={'0%'}>
 
                             {clients1.map(client => <ClientBox client={client} />)}
 
@@ -43,7 +43,7 @@ const Clients = () => {
 
                     <div className='clients-container'>
 
-                        <Slider animation={animation2}>
+                        <Slider animation={animation2} startPoint={'110%'}>
 
                             {clients1.map(client => <ClientBox client={client} />)}
 

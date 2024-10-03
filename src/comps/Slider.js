@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Slider = ({ children, animation }) => {
+const Slider = ({ children, animation, startPoint }) => {
     console.log(animation);
     return (
-        <div className='slider' style={{ animation: animation }}>
+        <div className='slider' style={{ animation: animation, right: startPoint }}>
             {children}
         </div>
     )
