@@ -9,7 +9,7 @@ const ClientBox = ({ avatar, name, title, description, client }) => {
 
             <div className="client-flex-row">
 
-                <img width={65} height={65} className="client-avatar" src={client.avatar} />
+                <img width={60} height={60} className="client-avatar" src={client.avatar} />
 
                 <div className="client-flex-column">
 
