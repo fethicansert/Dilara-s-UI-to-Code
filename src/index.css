@@ -20,7 +20,24 @@ code {
 }
 
 .wrapper {
-  border: 1px solid lightgreen;
+  /* border: 1px solid lightgreen; */
   width: 1200px;
   margin: 0 auto;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 650;
+}
+
+.slider {
+  display: flex;
+  gap: 0 15px;
+  position: relative;
+  right: 0%;
+  animation-name: slideleft;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }

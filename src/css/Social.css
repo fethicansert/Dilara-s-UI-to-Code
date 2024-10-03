@@ -3,18 +3,11 @@
     padding: 2rem;
 }
 
-.social-title {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 650;
-}
-
 .logo {
     margin: 0 2.2rem;
 }
 
 .logos-container {
-    max-width: 1200px;
     margin: 2rem 0;
     overflow: hidden;
 }
@@ -25,13 +18,13 @@
     /* background: red; */
     position: relative;
     right: 0%;
-    animation-name: slideleft;
+    animation-name: logosAnimation;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes slideleft {
+@keyframes logosAnimation {
     0% {
         right: 0%
     }

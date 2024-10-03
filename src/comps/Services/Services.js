@@ -10,6 +10,7 @@ import { AiFillOpenAI } from "react-icons/ai";
 import blueMarks from '../../images/file.png'
 
 import Button from '../Buttons/Button';
+import SubTitle from '../SubTitle';
 
 const Services = () => {
 
@@ -39,10 +40,13 @@ const Services = () => {
 
     });
 
+    const titleStyle = { marginBottom: '2rem' }
+
     return (
         <section className='services-section' id='service-section'>
             <Wrapper>
-                <h2 className='services-title'>Our Services</h2>
+
+                <SubTitle style={titleStyle}>Our Services</SubTitle>
 
                 <p className='services-text'>
                     We are provide expert cybersecurity services including penetration testing, vulnerability assessments, and customized <br />
@@ -60,8 +64,7 @@ const Services = () => {
                     />
 
                     <ServiceBox
-                        icon={<PiLockKeyFill
-                            size={19} />}
+                        icon={<PiLockKeyFill size={19} />}
                         title={"Security Consulting"}
                         description={"Echange your security posture with consulting and tailored cybersecurty solutions."}
                     />

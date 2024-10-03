@@ -4,13 +4,6 @@
     padding-bottom: 5rem;
 }
 
-.services-title {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 650;
-    margin-bottom: 2rem;
-}
-
 .services-text {
     text-align: center;
     color: rgb(88, 88, 88);
@@ -19,11 +12,11 @@
 }
 
 .service-box-container {
+    width: 100%;
     margin-top: 4.5rem;
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     position: relative;
 }
 
@@ -43,7 +36,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 
-    text-align: start;
     cursor: pointer;
 
     transition: transform 250ms ease;
