@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+
 import Wrapper from './Wrapper'
+
 import desingLogo from '../images/design-icon.png';
 import developLogo from '../images/develop-icon.png';
+
+import '../css/Footer.css'
 
 const Footer = () => {
     return (

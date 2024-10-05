@@ -91,9 +91,7 @@
     rotate: 170deg;
 }
 
-.blue-marks:hover {
-    background: teal;
-}
+
 
 @keyframes fading {
     0% {
